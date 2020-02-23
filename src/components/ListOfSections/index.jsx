@@ -20,7 +20,7 @@ ListOfSections.propTypes = {
     PropTypes.shape({
       key: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
-      cover: PropTypes.string,
+      cover: PropTypes.func.isRequired,
       alt: PropTypes.string,
       emoji: PropTypes.string
     })

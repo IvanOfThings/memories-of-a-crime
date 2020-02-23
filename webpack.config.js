@@ -23,16 +23,16 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
-      },
+      } /* ,
       {
         test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/i,
         use: {
           loader: 'url-loader', // El orden de ejecución es desde el último al primero
           options: {
-            limit: 90000 // tamaño permitido del formato binario que queramos caragar
+            limit: 9000000 // tamaño permitido del formato binario que queramos caragar
           }
         }
-      } /*
+      } /* ,
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader']

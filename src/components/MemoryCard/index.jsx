@@ -38,5 +38,9 @@ export const MemoryCard = ({ title, details }) => {
 
 MemoryCard.propTypes = {
   title: PropTypes.string.isRequired,
-  details: PropTypes.string.isRequired
+  details: PropTypes.string
+};
+
+MemoryCard.defaultProps = {
+  details: ''
 };

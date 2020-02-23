@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  margin: 20px auto;
+  margin: 0px auto;
   display: flex;
   justify-content: center;
   /*overflow: scroll;*/
