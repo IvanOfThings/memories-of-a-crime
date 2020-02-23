@@ -1,14 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-export const output = {
-  filename: 'app.bundle.js'
-};
-export const plugins = [
-  new HtmlWebpackPlugin({
-    template: 'src/index.html'
-  })
-];
-export const module = {
+module.exports = {
+  output: {
+    filename: 'app.bundle.js'
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    })
+  ],
   rules: [
     {
       test: /\.js$/,
