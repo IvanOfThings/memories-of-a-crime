@@ -1,0 +1,9 @@
+{
+  "verison": 2,
+  "name": "Memories of a Crime",
+  "builds": [{ "use": "@now/static-build" }, { "src": "package.json" }],
+  "routes": [
+    { "src": "(.*).js", "dest": "/$1.json" },
+    { "src": "/.*", "dest": "/index.html" }
+  ]
+}
