@@ -8,7 +8,7 @@ export const List = styled.ul`
 `;
 
 export const ButtonWrapper = styled.ul`
-  margin: 50px auto;
+  margin: 50px 20ch;
   justify-content: center;
-  width: 75%;
+  width: 100%;
 `;

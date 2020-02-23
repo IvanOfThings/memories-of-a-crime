@@ -3,6 +3,7 @@ import { Router } from '@reach/router';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import styled from 'styled-components';
 import { ListOfSections } from '../components/ListOfSections';
 import Memory from '../images/memories.png';
 import Download from '../images/descarga.png';
@@ -52,6 +53,12 @@ const GET_USERS = gql`
   }
 `;
 
+export const SpinnerWrapper = styled.p`
+  margin: 50px 25ch;
+  justify-content: center;
+  width: 100%;
+`;
+
 export const Home = () => {
   const [idUser, setIdUser] = useState(null);
   const [toggle, setToggle] = useState(false);
@@ -69,7 +76,9 @@ export const Home = () => {
     <>
       <ListOfSections sections={sections} />
       {loading ? (
-        <CircularProgress />
+        <SpinnerWrapper>
+          <CircularProgress />
+        </SpinnerWrapper>
       ) : (
         <Router>
           <Memories
