@@ -9,6 +9,6 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  padding: 0 8;
+  padding: 0;
   margin: 0 auto;
 `;

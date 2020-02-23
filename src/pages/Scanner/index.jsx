@@ -69,7 +69,9 @@ export const Scanner = props => {
             <MemoryCard title={memory.title} details={memory.details} />
           </>
         ) : (
-          <MemoryCard title="No funciona" details={message} />
+          <PWrapper>
+            <MemoryCard title="No funciona" details={message} />
+          </PWrapper>
         )
       ) : (
         <QrReader delay={300} onError={handleError} onScan={handleScan} style={{ width: '100%' }} />
